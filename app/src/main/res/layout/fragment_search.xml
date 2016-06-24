@@ -1,0 +1,47 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gilriz.jbproject2.SearchFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:id="@+id/SearchText"
+        android:layout_marginBottom="100dp"
+        android:layout_gravity="center_horizontal|bottom" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:id="@+id/BtnSearch"
+        android:layout_gravity="center_horizontal|bottom" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="344dp"
+        android:layout_gravity="center_horizontal|top">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Search in your current area"
+            android:id="@+id/radioIdHere"
+            android:layout_gravity="left|top"
+            android:checked="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Search in a different location"
+            android:id="@+id/radioIdDifferent"
+            android:layout_gravity="left|center_vertical"
+            android:checked="false" />
+    </RadioGroup>
+
+</FrameLayout>
